@@ -1,0 +1,26 @@
+{
+  "name": "postulaciontcit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node --env-file .env.example backend/index.js",
+    "client": "cd frontend && npm run dev",
+    "setup": "npm install && cd frontend && npm install",
+    "start": "npm run setup && concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "concurrently": "^9.1.0"
+  }
+}
