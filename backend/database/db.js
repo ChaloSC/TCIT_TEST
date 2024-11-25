@@ -2,10 +2,10 @@
 import Sequelize from "sequelize";
 
 // Importación de las variables de entorno
-const DB_DATABASE = process.env.DBNAME;
-const DB_USER = process.env.DBUSER;
-const DB_PASSWORD = process.env.DBPASSWORD;
-const DB_HOST = process.env.DBHOST;
+const DB_DATABASE = process.env.DB_NAME;
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = process.env.DB_PASSWORD;
+const DB_HOST = process.env.DB_HOST;
 
 // Configuración de la conexión a PostgreSQL
 // Reemplazar nombre de base de datos, usuario, contraseña, host y dialect según corresponda.
